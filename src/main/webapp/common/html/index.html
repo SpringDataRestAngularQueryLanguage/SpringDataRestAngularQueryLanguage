@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="ACME Inc.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loaders App</title>
+
+    <link rel="stylesheet" href="/common/css/app.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+</head>
+<body lang="en" ng-app="ngdemo">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<br />
+<div ng-include='"/common/templates/header.html"'></div>
+<div ng-view class="container"></div>
+<div ng-include='"/common/templates/footer.html"'></div>
+
+
+<!-- JQuery ================================================================ -->
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<!-- Bootstrap ============================================================= -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<!-- AngularJS ============================================================= -->
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.min.js"></script>
+
+<!-- AngularJS App Code ====================================================-->
+<script src="/common/javascript/app.js"></script>
+<script src="/common/javascript/controllers.js"></script>
+<script src="/common/javascript/directives.js"></script>
+<script src="/common/javascript/filters.js"></script>
+<script src="/common/javascript/services.js"></script>
+
+
+
+<!-- Example controllers -->
+<script src="/example/relation_examples/one/OneA-controllers.js"></script>
+
+<script src="/example/relation_examples/one_to_one/OneToOneA-controllers.js"></script>
+<script src="/example/relation_examples/one_to_one/OneToOneB-controllers.js"></script>
+
+<script src="/example/relation_examples/one_to_one_self/OneToOneSelfA-controllers.js"></script>
+
+<script src="/example/relation_examples/one_to_many/OneToManyA-controllers.js"></script>
+<script src="/example/relation_examples/one_to_many/OneToManyB-controllers.js"></script>
+
+<script src="/example/relation_examples/one_to_many_self/OneToManySelfA-controllers.js"></script>
+
+<script src="/example/relation_examples/many_to_many/ManyToManyA-controllers.js"></script>
+<script src="/example/relation_examples/many_to_many/ManyToManyB-controllers.js"></script>
+
+<script src="/example/relation_examples/many_to_many_self/ManyToManySelfA-controllers.js"></script>
+
+<script src="/exampletest/one_to_many/event-controllers.js"></script>
+<script src="/exampletest/one_to_many/host-controllers.js"></script>
+</body>
+</html>

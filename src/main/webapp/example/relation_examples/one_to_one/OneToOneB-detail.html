@@ -1,0 +1,27 @@
+<div ng-controller="oneToOneBDetailCtrl">
+    <div class="panel panel-info">
+
+        <div class="panel-heading">
+            <div><span class="glyphicon glyphicon-tower" /> oneToOneB detail</div>
+        </div>
+
+        <div class="panel-body">
+            <form novalidate="novalidate" class="form-horizontal">
+                <div class="control-group">
+                    <div class="row">
+                        <div class="col-md-2"><label class="control-label" for="nameId">Name:</label></div>
+                        <div class="col-md-6"><input type="text" id="nameId" ng-model="entity.name"/></div>
+                    </div>
+                </div>
+                <br/>
+                <div class="control-group">
+                    <div class="controls">
+                        <a ng-click="cancel()" class="btn btn-small btn-primary">cancel</a>
+                        <a ng-click="updateEntity()" class="btn btn-small btn-primary">save</a>
+                        <a ng-click="deleteEntity()" class="btn btn-small btn-danger">delete</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

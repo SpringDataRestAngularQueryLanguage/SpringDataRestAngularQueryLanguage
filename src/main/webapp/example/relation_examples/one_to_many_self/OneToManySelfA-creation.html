@@ -1,0 +1,24 @@
+<div ng-controller="oneToManySelfACreationCtrl">
+    <div class="panel panel-info">
+
+        <div class="panel-heading">
+            <div><span class="glyphicon glyphicon-link" /> New oneToManySelfA</div>
+        </div>
+
+        <div class="panel-body">
+            <form ng-submit="createNewEntity()" novalidate="novalidate" class="form-horizontal">
+                <div class="row">
+                    <div class="col-md-2"><label class="control-label" for="nameId">Name:</label></div>
+                    <div class="col-md-6"><input type="text" id="nameId" ng-model="entity.name"/></div>
+                </div>
+                <br />
+                <div class="btn-group btn-group-lg">
+                    <div class="controls">
+                        <a ng-click="cancel()" class="btn btn-small btn-primary">cancel</a>
+                        <a ng-click="createNewEntity()" class="btn btn-small btn-primary">create</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

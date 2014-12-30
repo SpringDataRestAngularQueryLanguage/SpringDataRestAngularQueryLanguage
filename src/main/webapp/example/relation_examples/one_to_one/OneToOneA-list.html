@@ -1,0 +1,39 @@
+<div ng-controller="oneToOneAListCtrl">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <div><span class="glyphicon glyphicon-tower" /> oneToOneA list</div>
+            <div>Filter <input ng-model="query"></div>
+        </div>
+
+        <div class="panel-body">
+
+            <table class="table table-condensed table-hover">
+                <thead>
+                <tr>
+                    <th style="min-width: 80px;">Id</th>
+                    <th style="min-width: 80px;">Name</th>
+                    <th style="width:20px;">&nbsp;</th>
+                    <th style="width:20px;">&nbsp;</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr ng-repeat="entity in entities | filter:query">
+                    <td>{{ entity.id }}</td>
+                    <td>{{ entity.name }}</td>
+                    <td><a ng-click="editEntity(entity.id)" class="btn btn-small btn-primary">edit</a></td>
+                    <td><a ng-click="deleteEntity(entity.id)" class="btn btn-small btn-danger">delete</a></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <div class="control-group">
+                <div class="controls">
+                    <a ng-click="createNewEntity()" class="btn btn-small btn-primary" tabindex="1">new</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
